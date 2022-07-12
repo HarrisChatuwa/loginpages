@@ -1,0 +1,69 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Login Page</title>
+  </head>
+  <body>
+    <div class="absolute w-screen h-screen flex">
+      <div class="hidden lg:block w-5/12 h-full">
+        <img src="../assets/imgs/img.jpg" class="h-full w-full object-cover" />
+      </div>
+      <div class="w-full lg:w-7/12 overflow-scroll py-24 relative">
+        <form class="w-5/6 sm:w-1/2 mx-auto text-center">
+          <img src="../assets/logo/logo_1.svg" class="h-16 block mx-auto" />
+          <div class="mt-10">
+            <h2 class="text-3xl font-bold text-gray-800">
+              Capital Hill Email System
+            </h2>
+            <p class="text-md text-gray-400 pt-2">
+              Log in to access your account
+            </p>
+          </div>
+          <div class="mt-12">
+            <div class="my-6">
+              <div class="">
+                <div class="">
+                  <input
+                    type="text"
+                    name="username"
+                    class="w-full border border-gray-300 rounded-sm px-4 py-3 outline-none transition-colors duration-150 ease-in-out focus:border-cyan-400"
+                    placeholder="Username"
+                    value=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="my-6">
+              <div class="">
+                <div class="">
+                  <input
+                    type="password"
+                    name="password"
+                    class="w-full border border-gray-300 rounded-sm px-4 py-3 outline-none transition-colors duration-150 ease-in-out focus:border-cyan-400"
+                    placeholder="Password"
+                    value=""
+                  />
+                </div>
+              </div>
+              <div class="text-right">
+                <a href="#" class="text-cyan-600">Forgot your password?</a>
+              </div>
+            </div>
+            <div class="my-6">
+              <button
+                class="inline-block rounded-sm font-medium border border-solid cursor-pointer text-center text-base py-3 px-6 text-white bg-cyan-600 border-cyan-600 hover:bg-cyan-800 hover:border-cyan-600 w-full"
+                type="submit"
+              >
+                Log In
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

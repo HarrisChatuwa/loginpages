@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Login Page</title>
+</head>
+<body style="background-image: url('../assets/background/bg_3.jpg');">
+    <div class="flex items-center justify-center min-h-screen bg-gray-800/[0.85]">
+        <div class="flex flex-col mx-auto items-center space-y-6">
+            <h1 class="text-2xl font-bold text-gray-100">CAPITAL HILL EMAIL SYSTEM</h1>
+            <div class="flex flex-col max-w-md p-6 rounded-md sm:p-10 bg-gray-900 text-gray-100 w-screen">
+                <div class="mb-8 text-center space-y-4">
+                    <img
+            src="../assets/logo/logo_1.svg"
+            class="h-16 block mx-auto opacity-[0.85]"
+          />
+                    <p class="text-sm text-gray-400">Log in to access your account</p>
+                </div>
+                <form novalidate="" action="" class="space-y-12 ng-untouched ng-pristine ng-valid">
+                    <div class="space-y-4">
+                        <div>
+                            <label for="username" class="block mb-2 text-sm">Username</label>
+                            <input type="username" name="username" id="username" placeholder="Username" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-violet-300 border-gray-700 bg-gray-900 text-gray-100">
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <label for="password" class="text-sm">Password</label>
+                                <a rel="noopener noreferrer" href="#" class="text-xs hover:underline dark:text-gray-400">Forgot password?</a>
+                            </div>
+                            <input type="password" name="password" id="password" placeholder="Password" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-violet-300 border-gray-700 bg-gray-900 text-gray-100">
+                        </div>
+                            <div class="w-full flex items-center">
+                              <input
+                                type="checkbox"
+                                name="rememberMe"
+                                class="appearance-none w-6 h-6 border border-gray-300 rounded-sm outline-none cursor-pointer checked:bg-gray-200"
+                                checked=""
+                              /><label class="ml-2 text-sm" for="rememberMe"
+                                >Remember this device</label
+                              >
+                            </div>
+
+                    </div>
+                    <div class="space-y-2">
+                        <div>
+                            <button type="button" class="w-full px-8 py-3 rounded-md bg-gray-200 text-gray-900 hover:bg-violet-300">Log in</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
